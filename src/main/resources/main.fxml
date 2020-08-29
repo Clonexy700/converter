@@ -1,0 +1,20 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<VBox fx:controller="com.clonexy700.htac.Controller" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity" minWidth="-Infinity" spacing="8.0" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0"/>
+    </padding>
+
+    <Text text="HTML to ASCII converter" style="-fx-font-size: 150%"/>
+    <Button text="Select files to convert" onAction="#fileChooserAction"/>
+    <Button text="Select directory containing files to convert" onAction="#directoryChooserAction"/>
+    <TextField text="untitled" fx:id="jsonTitle"/>
+    <TextField text="Untitled Doc" fx:id="documentTitle"/>
+    <TextArea text="Json Paste" fx:id="textArea"/>
+    <Button text="Convert text to json" onAction="#convertToJson"/>
+    <Text fx:id="infoText"/>
+</VBox>
